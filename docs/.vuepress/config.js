@@ -1,5 +1,6 @@
 module.exports = {
   base: '/blogs/',
+  dist: 'docs/.vuepress/dist',
   title: '成新宇的博客',
   description: '日复一日 必有精进',
   theme: 'reco',
