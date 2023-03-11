@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: A TO A:GH_PAGES
 on: [push]
 jobs:
   build-and-deploy:
@@ -7,10 +7,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: vuepress-deploy
+    - name: Build and Deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.Deploy }}
-        BUILD_SCRIPT: yarn && yarn docs:build
+        TARGET_REPO: cinyic/blogs
+        TARGET_BRANCH: gh_pages
+        BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: blog/.vuepress/dist/
-        COMMIT_MESSAGE: Auto deploy from Github Actions
