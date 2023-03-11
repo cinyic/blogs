@@ -10,7 +10,7 @@ jobs:
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
-        ACCESS_TOKEN: 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
+        ACCESS_TOKEN: ${{ secrets.Deploy }}
         BUILD_SCRIPT: yarn && yarn docs:build
         BUILD_DIR: blog/.vuepress/dist/
         COMMIT_MESSAGE: Auto deploy from Github Actions
