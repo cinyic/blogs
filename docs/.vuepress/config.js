@@ -28,6 +28,9 @@ module.exports = {
         location: 4, // 在导航栏菜单中所占的位置，默认4
         text: "Tag", // 默认文案 “标签”
       },
+      socialLinks: [     // 信息栏展示社交信息
+        { icon: 'reco-github', link: 'https://github.com/cinyic' },
+      ]
     },
   },
   locales: {
