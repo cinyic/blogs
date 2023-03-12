@@ -1,13 +1,2 @@
-pids
-logs
+# node modules
 node_modules
-npm-debug.log
-coverage/
-run
-dist
-public
-.DS_Store
-.nyc_output
-.basementgit
-config.local.js
-basement_dist
