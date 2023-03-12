@@ -42,7 +42,7 @@ module.exports = {
         text: "Tag", // 默认文案 “标签”
       },
       socialLinks: [     // 信息栏展示社交信息
-      lang: "zh-CN",
+      ]
     },
   },
   // 插件配置
